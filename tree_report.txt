@@ -1,0 +1,519 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 34 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: datadrivenpdes/core/integration_test.py
+--------------------------------------------------------------------------------
+datadrivenpdes/core/integration_test.py:31:7: ERROR: Using member tf.contrib.framework.nest in deprecated module tf.contrib. tf.contrib.framework.nest cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'datadrivenpdes'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/__init__.py'
+ outputting to 'datadrivenpdes_TensorFlow2/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/advection/__init__.py'
+ outputting to 'datadrivenpdes_TensorFlow2/advection/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/advection/equations.py'
+ outputting to 'datadrivenpdes_TensorFlow2/advection/equations.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 58
+    def diffusion_coefficient(self) -> float:
+                                    ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/advection/equations_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/advection/equations_test.py'
+--------------------------------------------------------------------------------
+
+28:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/advection/velocity_fields.py'
+ outputting to 'datadrivenpdes_TensorFlow2/advection/velocity_fields.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 40
+    t: float,
+     ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/advection/velocity_fields_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/advection/velocity_fields_test.py'
+--------------------------------------------------------------------------------
+
+26:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/__init__.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/builders.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/builders.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 45
+    def convert_to_tf_example(state: StateGridTensors) -> bytes:
+                                   ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/builders_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/builders_test.py'
+--------------------------------------------------------------------------------
+
+22:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/equations.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/equations.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 60
+    CONTINUOUS_EQUATION_NAME = ...  # type: str
+                               ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/geometry.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/geometry.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 32
+    def forward(self, state: Mapping[str, tf.Tensor]) -> Dict[str, tf.Tensor]:
+                           ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/geometry_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/geometry_test.py'
+--------------------------------------------------------------------------------
+
+26:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+48:11: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+75:26: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+92:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+93:15: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+94:15: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+109:15: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+120:15: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+121:17: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/grids.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/grids.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 39
+    size_x: int
+          ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/grids_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/grids_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/integrate.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/integrate.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 40
+    model: models.TimeStepModel,
+         ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/integrate_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/integrate_test.py'
+--------------------------------------------------------------------------------
+
+27:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/integration_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/integration_test.py'
+--------------------------------------------------------------------------------
+
+31:7: ERROR: Using member tf.contrib.framework.nest in deprecated module tf.contrib. tf.contrib.framework.nest cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+35:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/models.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/models.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 44
+    def sorted_values(x: Dict[Any, T]) -> List[T]:
+                       ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/models_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/models_test.py'
+--------------------------------------------------------------------------------
+
+33:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+69:27: INFO: tf.initializers.ones requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+69:27: INFO: Renamed 'tf.initializers.ones' to 'tf.compat.v1.initializers.ones'
+80:31: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+156:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+225:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+342:11: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/polynomials.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/polynomials.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 33
+    offset: int,
+          ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/polynomials_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/polynomials_test.py'
+--------------------------------------------------------------------------------
+
+25:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/readers.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/readers.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 33
+    metadata: Mapping[str, Any],
+            ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/readers_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/readers_test.py'
+--------------------------------------------------------------------------------
+
+33:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/states.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/states.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 63
+    name: str
+        ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/states_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/states_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/tensor_ops.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/tensor_ops.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 35
+    def _normalize_axis(axis: int, ndim: int) -> int:
+                            ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/tensor_ops_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/tensor_ops_test.py'
+--------------------------------------------------------------------------------
+
+27:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+42:18: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+43:19: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+86:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+108:13: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+110:11: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/utils.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/utils.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 25
+    state_def: states.StateDefinition,
+             ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/core/utils_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/core/utils_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/pipelines/__init__.py'
+ outputting to 'datadrivenpdes_TensorFlow2/pipelines/__init__.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/pipelines/beamlib.py'
+ outputting to 'datadrivenpdes_TensorFlow2/pipelines/beamlib.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 30
+    def create_accumulator(self) -> Tuple[float, float, int]:
+                                 ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/pipelines/create_training_data.py'
+ outputting to 'datadrivenpdes_TensorFlow2/pipelines/create_training_data.py'
+--------------------------------------------------------------------------------
+
+37:0: INFO: Renamed 'tf.enable_eager_execution' to 'tf.compat.v1.enable_eager_execution'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/pipelines/create_training_data_test.py'
+ outputting to 'datadrivenpdes_TensorFlow2/pipelines/create_training_data_test.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'datadrivenpdes/pipelines/model_utils.py'
+ outputting to 'datadrivenpdes_TensorFlow2/pipelines/model_utils.py'
+--------------------------------------------------------------------------------
+
+ERROR: Failed to parse.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow_core/tools/compatibility/ast_edits.py", line 933, in update_string_pasta
+    t = pasta.parse(text)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/__init__.py", line 23, in parse
+    t = ast_utils.parse(src)
+  File "/usr/local/lib/python2.7/dist-packages/pasta/base/ast_utils.py", line 56, in parse
+    tree = ast.parse(sanitize_source(src))
+  File "/usr/lib/python2.7/ast.py", line 37, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 18
+    def model_from_config(grid, config: Mapping[str, Any]):
+                                      ^
+SyntaxError: invalid syntax
+
+--------------------------------------------------------------------------------
+
